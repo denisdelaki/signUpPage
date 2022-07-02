@@ -1,0 +1,56 @@
+body{
+    background-color: white;
+}
+#signUpIn{
+    box-shadow: 2px 2px 4px 2px;
+    width: 25rem;
+    height: 30rem;
+   margin: auto;
+}
+#signUp{
+    margin-left: 0.4rem;
+}
+.bottomp{
+
+color: black;    
+}
+#fName, #sName{
+   height: 1.5rem; 
+   margin: 0.3rem;
+   border: 2px solid;
+}
+#email{
+    height: 1.5rem;
+    width: 23rem;
+    margin: 0.5rem;
+    border: 2px solid;
+}
+#password{
+    height: 1.5rem;
+    width: 23rem;
+    margin: 0.5rem;
+     border: 2px solid;
+}
+#DOB{
+    margin: 1rem 1rem;
+}
+#gender >span{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    border: 1px solid; 
+    height: 1.5rem;
+}
+#signup{
+    margin-top: 2rem;
+    height: 2rem;
+    width: 10rem;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    position: relative;
+    color: white;
+    left: 10%; background-color: rgb(29, 183, 29);
+}
+.asterisk{
+    color: red;
+}
