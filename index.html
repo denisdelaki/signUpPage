@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
 <body>
-    <div>
-    <form action="#" method="post">
-<h3>Sign Up</h3>
+    <div id="signUpIn">
+    <form action="#" method="post" id="signUp">
+<h2>Sign Up</h2>
 <p>It's quick and easy</p>
-<input type="text" placeholder="First name" maxlength="15" required>
-<input type="text" placeholder="Surname" maxlength="15" required>
-<input type="email" name="email" id="email" required>
-<input type="password" placeholder="New password" minlength="4" maxlength="8" required>
-<label for="DOB">Date of birth <span class="asterisk">*</span></label>
+<input type="text" placeholder="First name" name="fName" id="fName" minlength="2" maxlength="15" required>
+<input type="text" placeholder="Surname" name="sName"id="sName" minlength="2" maxlength="15" required>
+<input type="email"placeholder="Enter Your Email Address" name="email" id="email" required>
+<input type="password" placeholder="New password" name="password" id="password" minlength="4" maxlength="8" required>
+<label for="DOB">Date of birth <span class="asterisk">*</span></label> <br>
+<span id="DOB">
 <select name="date" id="date" required>
     <option value="1">1</option>
     <option value="1">1</option>
@@ -99,11 +100,19 @@
     <option value="1982">1982</option>
     <option value="1981">1981</option>
 </select>
-<label name="gender" id="gender"> Gender <span class="asterisk">*</span></label>
-    <span>Male<input type="radio" name="male" id="male" required> </span>
-    <span>Female<input type="radio" name="female" required></span>
-    <span>Other <input type="radio" name="other" id="other" required></span>
-    </form>
+</span> <br>
+<span id="gender">
+<label name="gender"> Gender <span class="asterisk">*</span></label><br>
+
+    <span>Male<input type="radio" name="male" id="male" > </span>
+    <span>Female<input type="radio" name="female" ></span>
+    <span>Other <input type="radio" name="other" id="other" ></span>
+
+</span> <br>
+   <input type="submit" value="SIGNUP" id="signup">
+   <p>Already have an Account? click <a href="#">here</a> to sign in</p>
+   <p class="bottomp">By clicking signup button you agree with the terms and conditions of our company <a href="#">LEARN MORE</a></p>
+</form>
     </div>
     <script src="./assets/JS/script.js"></script>
 </body>
