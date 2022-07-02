@@ -12,12 +12,12 @@
     <form action="#" method="post">
 <h3>Sign Up</h3>
 <p>It's quick and easy</p>
-<input type="text" placeholder="First name">
-<input type="text" placeholder="Surname">
-<input type="email" name="email" id="email">
-<input type="password" placeholder="New password">
-<label for="DOB">Date of birth</label>
-<select name="date" id="date">
+<input type="text" placeholder="First name" maxlength="15" required>
+<input type="text" placeholder="Surname" maxlength="15" required>
+<input type="email" name="email" id="email" required>
+<input type="password" placeholder="New password" minlength="4" maxlength="8" required>
+<label for="DOB">Date of birth <span class="asterisk">*</span></label>
+<select name="date" id="date" required>
     <option value="1">1</option>
     <option value="1">1</option>
     <option value="1">1</option>
@@ -59,7 +59,7 @@
     <option value="29">29</option>
     <option value="30">30</option>
 </select>
-<select name="month" id="month">
+<select name="month" id="month" required>
     <option value="January">January</option>
     <option value="February">February</option>
     <option value="March">March</option>
@@ -73,7 +73,7 @@
     <option value="November">November</option>
     <option value="December">December</option>
 </select>
-<select name="year" id="year">
+<select name="year" id="year" required>
     <option value="2004">2004</option>
     <option value="2003">2003</option>
     <option value="2002">2002</option>
@@ -99,6 +99,10 @@
     <option value="1982">1982</option>
     <option value="1981">1981</option>
 </select>
+<label name="gender" id="gender"> Gender <span class="asterisk">*</span></label>
+    <span>Male<input type="radio" name="male" id="male" required> </span>
+    <span>Female<input type="radio" name="female" required></span>
+    <span>Other <input type="radio" name="other" id="other" required></span>
     </form>
     </div>
     <script src="./assets/JS/script.js"></script>
