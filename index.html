@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook SignUp </title>
     <link rel="stylesheet" href="./assets/CSS/style.css">
+    <script
+      src="https://kit.fontawesome.com/4ca77255f7.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
     <div id="signUpIn">
     <form action="#" method="post" id="signUp">
 <h2>Sign Up</h2>
 <p>It's quick and easy</p>
-<input type="text" placeholder="First name" name="fName" id="fName" minlength="2" maxlength="15" required>
+<input type="text" placeholder="First name" name="fName" id="fName" minlength="2" maxlength="15" autocomplete="off" required>
 <input type="text" placeholder="Surname" name="sName"id="sName" minlength="2" maxlength="15" required>
 <input type="email"placeholder="Enter Your Email Address" name="email" id="email" required>
 <input type="password" placeholder="New password" name="password" id="password" minlength="4" maxlength="8" required>
@@ -110,16 +114,19 @@
 
 </span> <br>
    <input type="submit" value="SIGNUP" id="signup">
-   <p>Already have an Account? click <a href="#">here</a> to sign in</p>
+   <p>Already have an Account? click <a href="#signIn">here</a> to sign in</p>
    <p class="bottomp">By clicking signup button you agree with the terms and conditions of our company <a href="#">LEARN MORE</a></p>
 </form>
     </div>
-<div>
-    <form action="#" method="get">
-     <input type="text" placeholder="Enter your Email Address" required>
-     <input type="text" placeholder="Password" required>
-     <input type="submit" value="Login">
-
+<div id="signIn">
+    <form action="#" method="get" id="loginForm">
+        <h2>Welcome Back Kindly login below</h2>
+     <input type="text" placeholder="Enter your Email Address" id="loginEmail" required>
+     <i class="fas fa-user"></i>
+     <input type="password" placeholder="Password" minlength="4" maxlength="8" name="password" id="loginPassword" required>
+     <i class="fas fa-lock"></i>
+     <input type="submit" value="Login" id="login">
+    <p>Don't have an account yet? sign up <a href="#signUpIn">here</a></p>
  </form>
 </div>
 
